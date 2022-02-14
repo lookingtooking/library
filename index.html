@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <h2>Inputs</h2>
+    <form action="">
+        <input class="empty" type="text" placeholder="Enter some text">
+        <input class="valid_text" type="text" placeholder="valid text">
+        <input class="invalid_text" type="text" placeholder="invalid text">
+    </form>
+    <h2>Check boxes</h2>
+    <form action="">
+        <label class="checkbox">
+            <input class="hidden-checkbox" type="checkbox">
+            <div class="valid">
+                <div class="green_box"></div>
+            </div>
+            Subscribe
+            <input class="hidden-checkbox" type="checkbox">
+            <div class="invalid">
+                <div class="red_box"></div>
+            </div>
+            Subscribe
+        </label>
+    </form>
+    <h2>Radio Buttons</h2>
+    <div class="radio_block">
+        <label class="label_radio">
+            <span>Gender:</span>   
+            <input class="radio_male" type="radio" name="radio">
+            <span class="fake"></span>
+            <span class="male">Male</span>
+        </label>
+        <label class="label_radio">
+            <input class="radio_female" type="radio" name="radio">
+            <span class="fake"></span>
+            <span>Female</span>
+        </label>
+    </div>
+    <h2>Buttons</h2>
+    <button class="green_active">Active</button>
+    <button class="green_hover">Hover</button>
+    <button class="red_danger">Dander</button>
+    <button class="red_hover">Hover</button>
+    <button class="disabled">Disabled</button>
+    <button class="green_circle">+</button>
+    <button class="red_circle">-</button>
+    <h2>Textarea</h2>
+    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+</body>
+
+</html>

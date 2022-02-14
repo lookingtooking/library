@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 40px;
+    position: relative;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    padding: 10px 0px 10px 15px;
+    font-size: 14px;
+}
+
+h2{
+    margin-top: 40px;
+}
+

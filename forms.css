@@ -1,0 +1,178 @@
+/* Text inputs */
+
+.empty {
+    border: 1.5px solid rgb(190, 190, 190);
+}
+
+.valid_text {
+    border: 1.5px solid green;
+    background-image: url(assets/valid.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+}
+
+.valid_text::placeholder {
+    color: green;
+}
+
+.invalid_text {
+    border: 1.5px solid rgb(185, 64, 56);
+    background-image: url(assets/invalid.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+}
+
+.invalid_text::placeholder {
+    color: rgb(185, 64, 56);
+}
+
+/* Checkbox inputs */
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.valid {
+    width: 30px;
+    height: 15px;
+    border: 1px solid rgb(3, 148, 3);
+    border-radius: 5px;
+    margin-top: -2px;
+}
+
+.green_box {
+    width: 14px;
+    height: 13px;
+    background-color: rgb(23, 192, 23);
+    border-radius: 3px;
+    margin: 1px;
+}
+
+.invalid {
+    width: 30px;
+    height: 15px;
+    border: 1px solid rgb(238, 42, 42);
+    border-radius: 5px;
+    margin-top: -2px;
+}
+
+.red_box {
+    width: 14px;
+    height: 13px;
+    background-color: rgb(241, 60, 60);
+    border-radius: 3px;
+    margin: 1px;
+    margin-left: auto;
+}
+
+.hidden-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+/* Radiobuttons */
+
+.radio_block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.label_radio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio_male, .radio_female {
+    display: none;
+}
+
+.fake {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(3, 148, 3);
+    border-radius: 100%;
+}
+
+.male {
+    margin-right: 10px;
+}
+
+.fake::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: rgb(20, 185, 20);
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.radio_male:checked+.fake::before {
+    opacity: 1;
+}
+
+.radio_female:checked+.fake::before {
+    opacity: 1;
+}
+
+/* BUTTONS */
+
+button {
+    background-color: rgb(136, 136, 136);
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.green_active {
+    background-color: rgb(71, 207, 43);
+}
+
+.green_hover {
+    background-color: rgb(52, 158, 30);
+}
+
+.red_danger {
+    background-color: rgb(238, 89, 89);
+}
+
+.red_hover {
+    background-color: rgb(202, 40, 40);
+}
+
+.green_circle {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(52, 158, 30);
+}
+
+.red_circle {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(202, 40, 40);
+}
+
+#textarea {
+    width: 600px;
+}
